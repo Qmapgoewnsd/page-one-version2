@@ -1,0 +1,82 @@
+body {
+    background-color: black;
+    color: white;
+}
+h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    margin-left: 10px;
+    animation-name: loopforhone;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+}
+h1::selection {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+@keyframes loopforhone {
+    0% { margin-left: 10px; }
+    50% { margin-left: 1000px; }
+    100% { margin-left: 10px; }
+}
+#numbers {
+    width: max-content;
+    height: 30px;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+#numbers::selection {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+#numbers::placeholder {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color:  hsl(0, 0%, 65%);
+    padding-left: -5px;
+    padding-bottom: 20px;
+}
+#check {
+    width: 700px;
+    height: 100px;
+    margin-top: 200px;
+    margin-left: 300px;
+    font-size: 36px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    z-index: 1;
+    box-shadow: 10px .4px white;
+}
+#check:hover {
+    cursor: pointer;
+    color: blue;
+    border: 2px solid blue;
+    transform: translateY(-10px);
+    transition: .4s;
+    box-shadow: 10px .4px blue;
+}
+#check:active {
+    box-shadow: 0 0 blue;
+    height: 95px;
+}
+@keyframes filip-infini {
+    0% { border-radius: 5px; }
+    50% { border-radius: 20px; }
+    0% { border-radius: 5px; }
+}
